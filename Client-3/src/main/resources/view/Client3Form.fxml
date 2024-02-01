@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="850.0" prefWidth="500.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.Client3FormController">
+   <children>
+      <AnchorPane layoutY="124.0" prefHeight="720.0" prefWidth="500.0" style="-fx-background-color: F4F4F4; -fx-background-radius: 40px 40px 0px 0px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <TextField fx:id="txtMessage" layoutX="77.0" layoutY="645.0" onAction="#txtMessageOnAction" prefHeight="50.0" prefWidth="398.0" promptText="   Message" style="-fx-background-color: D9D9D9; -fx-background-radius: 25;" stylesheets="@../styles/textField.css" AnchorPane.bottomAnchor="25.0">
+               <font>
+                  <Font name="SansSerif Bold" size="18.0" />
+               </font>
+            </TextField>
+            <ScrollPane fx:id="scrollPane" layoutX="18.0" layoutY="36.0" prefHeight="593.0" prefWidth="465.0" style="-fx-background-color: transparent;">
+               <content>
+                  <VBox fx:id="vBox" prefHeight="582.0" prefWidth="461.0" />
+               </content></ScrollPane>
+            <Button fx:id="btnCamera" layoutX="15.0" layoutY="649.0" mnemonicParsing="false" onAction="#btnTakePhotoOnAction" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #454FD6; -fx-background-radius: 100;" stylesheets="@../styles/button.css" AnchorPane.bottomAnchor="28.0">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/camera.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnAttach" layoutX="425.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnAttachOnAction" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #454FD6; -fx-background-radius: 20;" stylesheets="@../styles/button.css">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/galley.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnEmoji" layoutX="376.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnEmojiOnAction" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #454FD6; -fx-background-radius: 20;" stylesheets="@../styles/button.css">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/emoji.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnClose" layoutX="438.0" layoutY="11.0" mnemonicParsing="false" onAction="#btnCloseOnAction" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: transparent;" stylesheets="@../styles/button.css">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/close.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnBack" layoutX="11.0" layoutY="12.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: transparent;" stylesheets="@../styles/button.css">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnMinimize" layoutX="387.0" layoutY="11.0" mnemonicParsing="false" onAction="#btnMinimizeOnAction" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: transparent;" stylesheets="@../styles/button.css">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/minimize.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="lblUsername" layoutX="139.0" layoutY="87.0" prefHeight="17.0" prefWidth="213.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="emojiBar" layoutX="19.0" prefHeight="236.0" prefWidth="465.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="79.0" />
+      <AnchorPane fx:id="capturedImagePane" prefHeight="708.0" prefWidth="500.0" style="-fx-background-color: CBD2FF; -fx-background-radius: 30px 30px 0px 0px;" AnchorPane.bottomAnchor="82.0">
+         <children>
+            <ImageView fx:id="capturedImage" fitHeight="537.0" fitWidth="472.0" layoutX="13.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="btnNo" layoutX="291.0" layoutY="647.0" mnemonicParsing="false" onAction="#btnNoOnAction" prefHeight="43.0" prefWidth="109.0" style="-fx-background-color: red; -fx-background-radius: 30;" stylesheets="@../styles/button.css" text="No" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnYes" layoutX="85.0" layoutY="647.0" mnemonicParsing="false" onAction="#btnYesOnAction" prefHeight="43.0" prefWidth="109.0" style="-fx-background-color: green; -fx-background-radius: 30;" stylesheets="@../styles/button.css" text="Yes" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="93.0" layoutY="594.0" text="Do you want to send this image ?">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
