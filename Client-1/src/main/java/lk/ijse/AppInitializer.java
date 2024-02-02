@@ -40,3 +40,8 @@ public class AppInitializer extends Application {
         stage.show();
     }
 }
+class run{
+    public static void main(String[] args) {
+        AppInitializer.main(args);
+    }
+}

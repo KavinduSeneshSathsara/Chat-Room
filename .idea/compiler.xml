@@ -9,9 +9,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Client-1" />
         <module name="Server" />
-        <module name="Client-3" />
-        <module name="Client-2" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Client-2" target="1.8" />
+      <module name="Client-3" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Server {
+public class  Server {
     private static final int PORT = 5000;
     private static final List<ClientHandler> clients = new ArrayList<>();
 
