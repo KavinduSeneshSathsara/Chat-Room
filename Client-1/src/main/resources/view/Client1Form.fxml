@@ -12,9 +12,9 @@
 
 <AnchorPane fx:id="anchorpane" prefHeight="850.0" prefWidth="500.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.Client1FormController">
    <children>
-      <AnchorPane layoutY="124.0" prefHeight="720.0" prefWidth="500.0" style="-fx-background-color: F4F4F4; -fx-background-radius: 40px 40px 0px 0px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+      <AnchorPane layoutY="124.0" prefHeight="720.0" prefWidth="500.0" style="-fx-background-color: #2c3e50; -fx-background-radius: 40px 40px 0px 0px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
          <children>
-            <TextField fx:id="txtMessage" layoutX="77.0" layoutY="645.0" onAction="#txtMessageOnAction" prefHeight="50.0" prefWidth="398.0" promptText="   Message" style="-fx-background-color: D9D9D9; -fx-background-radius: 25;" stylesheets="@../styles/textField.css" AnchorPane.bottomAnchor="25.0">
+            <TextField fx:id="txtMessage" layoutX="87.0" layoutY="645.0" onAction="#txtMessageOnAction" prefHeight="50.0" prefWidth="398.0" promptText="   Message" style="-fx-background-color: D9D9D9; -fx-background-radius: 25;" stylesheets="@../styles/textField.css" AnchorPane.bottomAnchor="24.600000000000023">
                <font>
                   <Font name="SansSerif Bold" size="18.0" />
                </font>
@@ -23,16 +23,16 @@
                <content>
                   <VBox fx:id="vBox" prefHeight="582.0" prefWidth="461.0" />
                </content></ScrollPane>
-            <Button fx:id="btnCamera" layoutX="15.0" layoutY="649.0" mnemonicParsing="false" onAction="#btnTakePhotoOnAction" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #454FD6; -fx-background-radius: 100;" stylesheets="@../styles/button.css" AnchorPane.bottomAnchor="28.0">
+            <Button fx:id="btnCamera" layoutX="15.0" layoutY="649.0" mnemonicParsing="false" onAction="#btnTakePhotoOnAction" opacity="0.0" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #454FD6; -fx-background-radius: 100;" stylesheets="@../styles/button.css" AnchorPane.bottomAnchor="28.0">
                <graphic>
-                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="32.0" fitWidth="32.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../assets/camera.png" />
                      </image>
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="btnAttach" layoutX="425.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnAttachOnAction" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #454FD6; -fx-background-radius: 20;" stylesheets="@../styles/button.css">
+            <Button fx:id="btnAttach" layoutX="435.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnAttachOnAction" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #454FD6; -fx-background-radius: 20;" stylesheets="@../styles/button.css">
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -41,9 +41,9 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="btnEmoji" layoutX="376.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnEmojiOnAction" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #454FD6; -fx-background-radius: 20;" stylesheets="@../styles/button.css">
+            <Button fx:id="btnEmoji" layoutX="42.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnEmojiOnAction" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #454FD6; -fx-background-radius: 20;" stylesheets="@../styles/button.css">
                <graphic>
-                  <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="25.0" fitWidth="28.0" opacity="0.48" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../assets/emoji.png" />
                      </image>
